@@ -1,14 +1,11 @@
-Astropy package template
-========================
+SunPy package template
+=================================
 
-.. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
-    :target: http://www.astropy.org
-    :alt: Powered by Astropy Badge
+.. image:: http://img.shields.io/badge/powered%20by-SunPy-orange.svg?style=flat
+    :target: http://www.sunpy.org
+    :alt: Powered by SunPy Badge
 
-This is a package template provided by the Astropy project.
-
-Using this template, packages can make use of the setup, installation, and documentation
-infrastructure developed for the ``astropy`` core and affiliated packages.
+This is the template for affiliated packages of the SunPy project.
 
 For more information, see:
 
@@ -25,11 +22,9 @@ Using cookiecutter
 ^^^^^^^^^^^^^^^^^^
 
 This package template makes use of the `cookiecutter
-<https://cookiecutter.readthedocs.io/en/latest/index.html>`__ package to
-make it easier to get started with the package template. You will need to
-`install cookiecutter
-<https://cookiecutter.readthedocs.io/en/latest/installation.html>`__ which
-can be done easily using conda or pip::
+<https://cookiecutter.readthedocs.io/en/latest/index.html>`__ package to make it
+easier to get started with the package template. You will need to `install cookiecutter <https://cookiecutter.readthedocs.io/en/latest/installation.html>`__ which can
+be done easily using conda or pip::
 
   conda install -c conda-forge cookiecutter gitpython
 
@@ -38,21 +33,9 @@ can be done easily using conda or pip::
 
 Once you have cookiecutter installed you can run::
 
-  cookiecutter gh:astropy/package-template
+  cookiecutter gh:sunpy/package-template
 
 Which will ask you a series of questions to configure your package.
-
-
-Manually
-^^^^^^^^
-
-The ``rendered`` git branch of this repository contains a version of the
-template populated with placeholders.  This allows the package template to be
-used directly without using cookiecutter, although a number of
-`manual steps  <http://docs.astropy.org/projects/package-template/en/latest/>`_
-are required.  For this reason the cookiecutter approach is recommended.
-
-
 
 Improving the package template
 ------------------------------
