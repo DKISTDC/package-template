@@ -1,5 +1,5 @@
 SunPy package template
-=================================
+======================
 
 .. image:: http://img.shields.io/badge/powered%20by-SunPy-orange.svg?style=flat
     :target: http://www.sunpy.org
