@@ -1,12 +1,12 @@
-Welcome to Astropy Package Template's documentation!
+Welcome to SunPy Package Template's documentation!
 ====================================================
 
-The Astropy package template is designed to help quickly create new Python packages within the Astropy ecosystem.
+The SunPy package template is designed to help quickly create new Python packages within the SunPy ecosystem.
 
 Getting Started
 ---------------
 
-The Astropy Package template uses the `Cookiecutter
+The SunPy Package template uses the `Cookiecutter
 <http://cookiecutter.readthedocs.io/>`_ project to make it easier to get
 started. To use the package template you need cookiecutter installed, depending
 on how you have Python installed it can be obtained through either pip or
@@ -28,7 +28,7 @@ to use.
 
 To start a package with the package template run::
 
-  cookiecutter gh:astropy/package-template
+  cookiecutter gh:sunpy/package-template
 
 This will ask you a series of questions, and result in a directory inside your
 current working directory that has the name of your project.

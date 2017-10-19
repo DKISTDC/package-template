@@ -16,7 +16,7 @@
     "use_travis_ci": "y",
     "use_appveyor_ci": "y",
     "use_read_the_docs": "y",
-    "sphinx_theme": "sphinx_rtd_theme",
+    "sphinx_theme": "sunpy-sphinx-theme",
     "initialize_git_repo": "y",
     "astropy_helpers_version": "v2.0.2",
     "_parent_project": "sunpy",

@@ -9,10 +9,10 @@ This is the template for affiliated packages of the SunPy project.
 
 For more information, see:
 
-* The `documentation for this package template itself  <http://docs.astropy.org/projects/package-template/en/latest/>`_
+* The `documentation for this package template itself  <http://docs.sunpy.org/projects/package-template/en/latest/>`_
 * Astropy `documentation about this template <http://docs.astropy.org/en/latest/development/affiliated-packages.html>`_
 * `The Affiliated Packages section of the Astropy web site <http://affiliated.astropy.org>`_
-* `This template's Github code repository <https://github.com/astropy/package-template>`_
+* `This template's Github code repository <https://github.com/sunpy/package-template>`_
 
 
 Using this package template

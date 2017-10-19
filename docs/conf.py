@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Astropy Package Template documentation build configuration file, created by
+# SunPy Package Template documentation build configuration file, created by
 # sphinx-quickstart on Wed Jan 11 11:09:48 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -41,9 +41,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Astropy Package Template'
-copyright = '2017, The Astropy Developers'
-author = 'The Astropy Developers'
+project = 'SunPy Package Template'
+copyright = '2017, The SunPy Developers'
+author = 'The SunPy Developers'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -73,7 +73,7 @@ pygments_style = 'sphinx'
 todo_include_todos = False
 
 rst_epilog = """
-.. _Astropy: http://astropy.org
+.. _Astropy: http://sunpy.org
 """
 # -- Options for HTML output ----------------------------------------------
 
@@ -91,10 +91,9 @@ except AttributeError:
         os.path.dirname(astropy_helpers.sphinx.__file__)), 'themes')
     html_theme_path = [theme_dir]
 
-html_theme = 'bootstrap-astropy'
+html_theme = 'sunpy-sphinx-theme'
 
-html_favicon = os.path.join(html_theme_path[0], html_theme, 'static',
-                            'astropy_logo.ico')
+html_favicon = os.path.join(html_theme_path[0], html_theme, 'static', 'img', 'favicon-32.ico')
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -117,9 +116,9 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'AstropyPackageTemplatedoc'
+htmlhelp_basename = 'SunPyPackageTemplatedoc'
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None,
-                       'http://docs.astropy.org/en/stable/': None}
+                       'http://docs.sunpy.org/en/stable/': None}
