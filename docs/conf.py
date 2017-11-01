@@ -73,27 +73,16 @@ pygments_style = 'sphinx'
 todo_include_todos = False
 
 rst_epilog = """
-.. _Astropy: http://sunpy.org
+.. _SunPy: http://sunpy.org
 """
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
-try:
-    import astropy_helpers.sphinx
-    html_theme_path = astropy_helpers.sphinx.get_html_theme_path()
-# this is only needed until https://github.com/astropy/astropy-helpers/pull/290
-# is merged.
-except AttributeError:
-    import astropy_helpers.sphinx
-    theme_dir = os.path.join(os.path.abspath(
-        os.path.dirname(astropy_helpers.sphinx.__file__)), 'themes')
-    html_theme_path = [theme_dir]
+from sunpy_sphinx_theme.conf import *
 
-html_theme = 'sunpy-sphinx-theme'
-
-html_favicon = os.path.join(html_theme_path[0], html_theme, 'static', 'img', 'favicon-32.ico')
+#html_favicon = os.path.join(html_theme_path[0], html_theme, 'static', 'img', 'favicon-32.ico')
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -106,12 +95,12 @@ html_favicon = os.path.join(html_theme_path[0], html_theme, 'static', 'img', 'fa
 # so a file named "default.css" will overwrite the builtin "default.css".
 #html_static_path = ['_static']
 
-html_sidebars = {
-    '**': ['localtoc.html'],
-    'search': [],
-    'genindex': [],
-    'py-modindex': [],
-}
+#html_sidebars = {
+#    '**': ['localtoc.html'],
+#    'search': [],
+#    'genindex': [],
+#    'py-modindex': [],
+#}
 
 # -- Options for HTMLHelp output ------------------------------------------
 
