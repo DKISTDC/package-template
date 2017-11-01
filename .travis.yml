@@ -30,8 +30,6 @@ env:
       - EXTRA_CONTEXT=''
       - EXTRA_CONTEXT='include_example_cython_code=y'
       - EXTRA_CONTEXT="package_name=SunPyProject" FOLDERNAME='SunPyProject'
-      - EXTRA_CONTEXT='_parent_project=sunpy'
-      - TASK='render' EXTRA_CONTEXT='include_example_cython_code=y initialize_git_repo=n'
 
 install:
 
@@ -45,8 +43,3 @@ script:
    - if [[ $TASK == 'test' ]]; then python setup.py build; fi
    - if [[ $TASK == 'test' ]]; then python setup.py build_docs; fi
    - if [[ $TASK == 'test' ]]; then python setup.py test; fi
-
-
-after_success:
-  - cd ../../package-template
-  - bash .travis-deploy.sh
