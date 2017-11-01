@@ -124,10 +124,10 @@ html_theme_options = {
 
 {% endif %}
 
-{% if cookiecutter.sphinx_theme == "sphinx_rtd_theme" %}
+{% if cookiecutter.sphinx_theme == "sunpy-sphinx-theme" %}
 try:
-    import sphinx_rtd_theme
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+    from sunpy_sphinx_theme.conf import *
+    html_sidebars = {'**': ['docsidebar.html']}
 except ImportError:
     html_theme = 'default'
 {% endif %}
