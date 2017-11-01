@@ -1,12 +1,12 @@
 name: {{ cookiecutter.module_name }}
 
 channels:
-    - astropy
+    - conda-forge
 
 dependencies:
-    - astropy
+    - sunpy
     - Cython
     - matplotlib
     - numpy
-#   - pip:
-#       - dependency_from_pip
+   - pip:
+       - sunpy-sphinx-theme

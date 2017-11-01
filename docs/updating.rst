@@ -26,7 +26,7 @@ settings configured to your package and then pull the changes into your package.
    template was rendered (or using ``--replay``) render the template to a
    temporary folder::
 
-   $ cookiecutter [--replay] gh:astropy/package-template -o /tmp
+   $ cookiecutter [--replay] gh:sunpy/package-template -o /tmp
 
 2. **Make a new branch**::
 
@@ -39,27 +39,3 @@ settings configured to your package and then pull the changes into your package.
 4. **Git diff the patch**::
 
    $ git diff
-
-
-Using git Update
-----------------
-
-A pre-rendered version of the package template is automatically generated in the
-`astropy/package-template <https://github.com/astropy/package-template/>`__
-repository. This can be used as a git remote and changes pulled from it.
-
-The downside of this approach is the branch is rendered using the default
-settings, which means you are much more likely to get conflicts when you merge
-this branch.
-
-1. Add the Astropy package template repo as a git remote (if it is not already)::
-
-   $ git remote add package-template
-
-2. Pull from the remote::
-
-   $ git remote update
-
-3. Merge the branch::
-
-   $ git merge package-template/rendered
