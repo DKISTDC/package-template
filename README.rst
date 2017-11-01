@@ -46,3 +46,10 @@ repository. Everything in the repository that is not in this folder is not part
 of the template that the user will have rendered.
 
 For further information on writing templates for cookiecutter see `the cookiecutter docs <https://cookiecutter.readthedocs.io/en/latest/first_steps.html>`__.
+
+
+Attribution
+===========
+
+This package template is a derivative of the astropy package template, thanks
+astropy!
