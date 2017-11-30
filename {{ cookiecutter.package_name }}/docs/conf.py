@@ -119,16 +119,14 @@ html_theme_options = {
     'logotext2': '-template',  # orange, light
     'logotext3': ':docs'   # white,  light
     }
-{% else %}
-html_theme = "{{ cookiecutter.sphinx_theme }}"
-{% endif %}
-
-{% if cookiecutter.sphinx_theme == "sunpy-sphinx-theme" %}
+{% elif cookiecutter.sphinx_theme == "sunpy-sphinx-theme" %}
 try:
     from sunpy_sphinx_theme.conf import *
     html_sidebars = {'**': ['docsidebar.html']}
 except ImportError:
     html_theme = 'default'
+{% else %}
+html_theme = "{{ cookiecutter.sphinx_theme }}"
 {% endif %}
 
 # Custom sidebar templates, maps document names to template names.
