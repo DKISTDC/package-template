@@ -125,6 +125,11 @@ try:
     html_sidebars = {'**': ['docsidebar.html']}
 except ImportError:
     html_theme = 'default'
+{% elif cookiecutter.sphinx_theme == "dkist" %}
+try:
+    from dkist_sphinx_theme.conf import *
+except ImportError:
+    html_theme = 'default'
 {% else %}
 html_theme = "{{ cookiecutter.sphinx_theme }}"
 {% endif %}

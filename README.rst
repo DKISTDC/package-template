@@ -1,18 +1,16 @@
-SunPy package template
+DKIST package template
 ======================
 
 .. image:: http://img.shields.io/badge/powered%20by-SunPy-orange.svg?style=flat
     :target: http://www.sunpy.org
     :alt: Powered by SunPy Badge
 
-This is the template for affiliated packages of the SunPy project.
+This is the template for DKIST Python packages.
 
 For more information, see:
 
-* The `documentation for this package template itself  <http://docs.sunpy.org/projects/package-template/en/latest/>`_
-* Astropy `documentation about this template <http://docs.astropy.org/en/latest/development/affiliated-packages.html>`_
-* `The Affiliated Packages section of the Astropy web site <http://affiliated.astropy.org>`_
-* `This template's Github code repository <https://github.com/sunpy/package-template>`_
+* The `documentation for the sunpy template  <http://docs.sunpy.org/projects/package-template/en/latest/>`_
+* `This template's Github code repository <https://github.com/dkistdc/package-template>`_
 
 
 Using this package template
@@ -33,7 +31,7 @@ be done easily using conda or pip::
 
 Once you have cookiecutter installed you can run::
 
-  cookiecutter gh:sunpy/package-template
+  cookiecutter gh:dkistdc/package-template
 
 Which will ask you a series of questions to configure your package.
 
@@ -51,5 +49,5 @@ For further information on writing templates for cookiecutter see `the cookiecut
 Attribution
 ===========
 
-This package template is a derivative of the astropy package template, thanks
-astropy!
+This package template is a derivative of the sunpy package template which is
+a derivative of the astropy package template, thanks astropy!
